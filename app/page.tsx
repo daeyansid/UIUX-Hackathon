@@ -1,11 +1,10 @@
-import Footer from "./components/Footer";
-import TopBar from "./components/TopBar";
+import MainLayout from "./mainLayout";
+import HomePage from "./pages/home";
 
-export default function Home() {
+export default function page() {
   return (
-    <>
-      <TopBar />
-      <Footer />
-    </>
+    <MainLayout>
+      {<HomePage />}
+    </MainLayout>
   );
 }

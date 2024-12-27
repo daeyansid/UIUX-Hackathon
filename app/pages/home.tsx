@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
             {/* logo bar */}
             <LogoBar />
             {/* Product Grid */}
-            <h1 className="font-bold text-lg text-black ml-5">Featured Products:</h1>
+            <h1 className="font-bold text-2xl sm:text-4xl text-black ml-5">Featured Products:</h1>
             <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <ProductCard
                     title="Library Stool Chair"
@@ -72,8 +72,77 @@ const HomePage: React.FC = () => {
                     widthProp={300}
                 />
             </div>
-            {/* Category Grid */}
 
+            
+
+            {/* Our Product Grid */}
+            <h1 className="text-center font-bold text-2xl sm:text-4xl text-black ml-5 py-16">Our Products</h1>
+            <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image1.png"
+                    isNew={true}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image2.png"
+                    isNew={false}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image3.png"
+                    isNew={true}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image4.png"
+                    isNew={true}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image1.png"
+                    isNew={true}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image2.png"
+                    isNew={false}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image3.png"
+                    isNew={true}
+                    heightProp={300}
+                    widthProp={300}
+                />
+                <ProductCard
+                    title="Library Stool Chair"
+                    price={20}
+                    image="/Image4.png"
+                    isNew={true}
+                    heightProp={300}
+                    widthProp={300}
+                />
+            </div>
         </>
     );
 };

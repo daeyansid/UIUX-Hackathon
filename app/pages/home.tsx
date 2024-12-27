@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import LogoBar from '../components/LogoBar';
 import ProductCard from '../components/card';
+import CategorySection from '../components/category-section';
 
 const HomePage: React.FC = () => {
     return (
@@ -73,7 +74,8 @@ const HomePage: React.FC = () => {
                 />
             </div>
 
-            
+            {/* Category Section */}
+            <CategorySection />
 
             {/* Our Product Grid */}
             <h1 className="text-center font-bold text-2xl sm:text-4xl text-black ml-5 py-16">Our Products</h1>

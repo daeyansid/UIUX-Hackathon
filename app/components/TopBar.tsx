@@ -44,7 +44,7 @@ const TopBar = () => {
                         {/* Logo Section */}
                         <div className='flex items-center gap-2'>
                             <Image src="/logo.svg" width={45} height={45} alt="logo" />
-                            <p className='text-textColor text-xl sm:text-2xl font-bold'>Comforty</p>
+                            <p className='text-topBarColor text-xl sm:text-2xl font-bold'>Comforty</p>
                         </div>
 
                         {/* Cart Button */}
@@ -72,7 +72,7 @@ const TopBar = () => {
             </div>
 
             {/* Menu Bar */}
-            <div className='bg-bgFillColor border-t border-gray-300 shadow-lg'>
+            <div className='bg-white border-t border-gray-300 shadow-sm'>
                 <div className='container mx-auto px-4 sm:px-8 lg:px-16 xl:px-20 max-w-7xl'>
                     <div className={`${isMenuOpen ? 'block' : 'max-lg:hidden'} h-12 lg:!block`}>
                         {isMenuOpen && (

@@ -5,8 +5,8 @@ import Image from 'next/image'
 export default function Footer() {
     return (
         <footer className="w-full border-t bg-white text-black">
-            <div className="max-w-7xl px-6 sm:px-6 lg:px-8 py-12 mx-5">
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 mx-auto">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {/* Brand Section */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
@@ -72,13 +72,15 @@ export default function Footer() {
                     <div className='text-textColor'>
                         <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Newsletter</h3>
                         <div className="space-y-4">
-                            <div className="flex gap-4 max-w-sm items-center space-x-2">
+                            <div className="flex flex-col sm:flex-row gap-4 max-w-sm items-start sm:items-center">
                                 <input
                                     type="email"
                                     placeholder="Your email"
-                                    className="w-[155px] border border-gray-200 rounded-lg py-2 px-2"
+                                    className="w-full sm:w-[155px] border border-gray-200 rounded-lg py-2 px-2"
                                 />
-                                <button className='text-white font-bold border rounded-md py-3 px-4 bg-buttonGreen'>Subscribe</button>
+                                <button className='w-full sm:w-auto text-white font-bold border rounded-md py-3 px-4 bg-buttonGreen'>
+                                    Subscribe
+                                </button>
                             </div>
                             <p className="text-sm text-muted-foreground">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.
@@ -88,11 +90,11 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-12 flex flex-col items-center justify-between space-y-4 border-t pt-8 md:flex-row md:space-y-0">
-                    <p className="text-sm text-muted-foreground">
+                <div className="mt-8 sm:mt-12 flex flex-col items-center justify-between space-y-4 border-t pt-8 md:flex-row md:space-y-0">
+                    <p className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
                         © 2024 - E-Commerce Template - Designed & Develop by M Daeyan Siddiqui Tuesday (2-5)
                     </p>
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-2 sm:space-x-4">
                         <Image src="/mastercard.svg" alt="Card" width={32} height={32} />
                         <Image src="/paypal.svg" alt="PayPal" width={32} height={32} />
                         <Image src="/amex.svg" alt="AEX" width={32} height={32} />

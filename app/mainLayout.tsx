@@ -8,10 +8,12 @@ interface MainLayoutProps {
 
 export default function MainLayout({ children }: MainLayoutProps) {
     return (
-        <>
+        <div className="bg-white">
             <TopBar />
+            <div className="mx-4 sm:mx-8 lg:mx-16">
             {children}
+            </div>
             <Footer />
-        </>
+        </div>
     );
 }

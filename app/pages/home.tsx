@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import LogoBar from '../components/LogoBar';
 
 const HomePage: React.FC = () => {
     return (
+        <>
         <section className="sm:mx-5 text-gray-600 body-font bg-bgFillColor border rounded-bl-3xl pl-10 sm:mb-40">
             <div className="container mx-auto flex px-4 py-12 sm:px-5 sm:py-24 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left sm:pl-10 mb-8 md:mb-0 items-center text-center">
@@ -30,6 +32,8 @@ const HomePage: React.FC = () => {
                 </div>
             </div>
         </section>
+        <LogoBar />
+        </>
     );
 };
 

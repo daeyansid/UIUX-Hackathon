@@ -14,6 +14,7 @@ export default {
         textColor: "#636270",
         bgFillColor: "#F0F2F3",
         topBarColor: "#272343",
+        buttonGreen: "#029FAE",
       },
     },
   },

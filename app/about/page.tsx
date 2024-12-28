@@ -17,7 +17,7 @@ const features = [
     {
         icon: '/purchase.svg',
         title: "Unbeatable prices",
-        description: "For our materials and quality you won't find better prices anywhere",
+        description: "For our materials and quality you won&apos;t find better prices anywhere",
     },
     {
         icon: '/sprout.svg',
@@ -55,7 +55,7 @@ export default function Home() {
                     <div className="p-8 rounded-lg text-white h-[400px] bg-bgGreen">
                         <h1 className="text-2xl md:text-3xl font-bold mb-4 pt-10">About Us - Comforty</h1>
                         <p className="mb-6 text-teal-50">
-                            At Comforty, we believe that the way you furnish your space reflects who you are. We're dedicated to providing timely furniture solutions, and helping you create a space that seamlessly blends style and functionality.
+                            At Comforty, we believe that the way you furnish your space reflects who you are. We&apos;re dedicated to providing timely furniture solutions, and helping you create a space that seamlessly blends style and functionality.
                         </p>
                         <Button variant="secondary" size="lg" className="rounded-none bg-buttonGreen mt-14">
                             View Collection

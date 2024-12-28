@@ -12,7 +12,7 @@ const TopBar = () => {
 
     const menuItems = [
         { name: "Home", path: "/" },
-        { name: "Shop", path: "/shop" },
+        { name: "Shop", path: "/single-product" },
         { name: "Product", path: "/product" },
         { name: "Pages", path: "/faq" },
         { name: "About", path: "/about" },
@@ -40,7 +40,7 @@ const TopBar = () => {
                                     alt="tick"
                                 />
                             </div>
-                            <span>Faqs</span>
+                            <Link href="/faq"><span>Faqs</span></Link>
                             <div className="flex items-center">
                                 <Image
                                     src="/alert-circle.svg"
@@ -48,7 +48,7 @@ const TopBar = () => {
                                     height={20}
                                     alt="alert"
                                 />
-                                <span className="mx-1">Need Help</span>
+                                <Link href="/contact"><span className="mx-1">Need Help</span></Link>
                             </div>
                         </div>
                     </div>
@@ -60,12 +60,14 @@ const TopBar = () => {
                 <div className="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-20 max-w-7xl">
                     <div className="py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
                         {/* Logo Section */}
-                        <div className="flex items-center gap-2">
-                            <Image src="/logo.svg" width={45} height={45} alt="logo" />
-                            <p className="text-topBarColor text-xl sm:text-2xl font-bold">
-                                Comforty
-                            </p>
-                        </div>
+                        <Link href="/">
+                            <div className="flex items-center gap-2">
+                                <Image src="/logo.svg" width={45} height={45} alt="logo" />
+                                <p className="text-topBarColor text-xl sm:text-2xl font-bold">
+                                    Comforty
+                                </p>
+                            </div>
+                        </Link>
 
                         {/* Cart Button */}
                         <Link href="/checkout">

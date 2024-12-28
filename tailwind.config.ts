@@ -15,6 +15,8 @@ export default {
         bgFillColor: "#F0F2F3",
         topBarColor: "#272343",
         buttonGreen: "#029FAE",
+        bgGreen: "#007580",
+        bgGrayShade: "#F9F9F9",
       },
     },
   },

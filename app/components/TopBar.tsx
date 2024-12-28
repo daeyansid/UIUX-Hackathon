@@ -86,7 +86,14 @@ const TopBar = () => {
 
                         <ul className='h-full lg:flex lg:items-center lg:gap-x-8 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
                             <li className='mb-6 hidden max-lg:block'>
-                                <a href="#"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" className='w-36' /></a>
+                                <a href="#">
+                                    <Image 
+                                        src="/logo.svg" 
+                                        alt="logo" 
+                                        width={100}
+                                        height={10}
+                                    />
+                                </a>
                             </li>
                             {['Home', 'Shop', 'Product', 'Pages', 'About'].map((item, index) => (
                                 <li key={index} className='max-lg:border-b max-lg:py-3'>

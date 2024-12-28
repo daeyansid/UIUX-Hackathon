@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import LogoBar from '../components/LogoBar';
 import ProductCard from '../components/card';
-import CategorySection from '../components/category-section';
 import CategorySectionClient from '../components/category-section-client';
 import FurnitureShowcase from '../components/furniture-showcase';
 

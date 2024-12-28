@@ -17,6 +17,7 @@ export default {
         buttonGreen: "#029FAE",
         bgGreen: "#007580",
         bgGrayShade: "#F9F9F9",
+        bgGrayShade2: "#F7F7F7",
       },
     },
   },

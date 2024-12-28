@@ -14,7 +14,7 @@ const TopBar = () => {
         { name: "Home", path: "/" },
         { name: "Shop", path: "/shop" },
         { name: "Product", path: "/product" },
-        { name: "Pages", path: "/pages" },
+        { name: "Pages", path: "/faq" },
         { name: "About", path: "/about" },
     ];
 

@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { cn } from "@/app/lib/utils"
 import { Card, CardContent } from "@/app/ui/card"
+
+
 
 export interface Category {
     title: string
@@ -10,18 +11,21 @@ export interface Category {
     href: string
 }
 
-interface CategoryCardProps {
+export interface CategoryCardProps {
     category: Category
 }
 
-interface CategorySectionProps {
+export interface Category {
     title: string
-    categories: Category[]
-    className?: string
-    onCategoryClick?: (category: Category) => void
+    products: number
+    image: string
+    href: string
 }
 
-function CategoryCard({ category }: CategoryCardProps) {
+export interface CategoryCardProps {
+    category: Category
+}
+export function CategoryCard({ category }: CategoryCardProps) {
     return (
         <Link href={category.href}>
             <Card className="overflow-hidden group transition-transform hover:scale-[1.02]">
@@ -42,31 +46,6 @@ function CategoryCard({ category }: CategoryCardProps) {
                 </CardContent>
             </Card>
         </Link>
-    )
-}
-
-export default function CategorySection({
-    title,
-    categories,
-    className,
-    onCategoryClick,
-}: CategorySectionProps) {
-    return (
-        <section className={cn("container mx-auto px-4 py-8", className)}>
-            <h2 className="text-2xl font-semibold mb-6 text-slate-900">{title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {categories.map((category) => (
-                    <div
-                        key={category.title}
-                        onClick={() => onCategoryClick?.(category)}
-                        role={onCategoryClick ? "button" : undefined}
-                        tabIndex={onCategoryClick ? 0 : undefined}
-                    >
-                        <CategoryCard category={category} />
-                    </div>
-                ))}
-            </div>
-        </section>
     )
 }
 

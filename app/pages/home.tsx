@@ -3,6 +3,35 @@ import Image from 'next/image';
 import LogoBar from '../components/LogoBar';
 import ProductCard from '../components/card';
 import CategorySection from '../components/category-section';
+import CategorySectionClient from '../components/category-section-client';
+
+export interface Category {
+    title: string
+    products: number
+    image: string
+    href: string
+}
+
+const categories: Category[] = [
+    {
+        title: "Wing Chair",
+        products: 3584,
+        image: "/category-1.png",
+        href: "/categories/wing-chair"
+    },
+    {
+        title: "Wooden Chair",
+        products: 157,
+        image: "/category-2.png",
+        href: "/categories/wooden-chair"
+    },
+    {
+        title: "Desk Chair",
+        products: 154,
+        image: "/category-3.png",
+        href: "/categories/desk-chair"
+    }
+]
 
 const HomePage: React.FC = () => {
     return (
@@ -75,7 +104,10 @@ const HomePage: React.FC = () => {
             </div>
 
             {/* Category Section */}
-            <CategorySection />
+            <CategorySectionClient
+                title="Top Categories"
+                categories={categories}
+            />
 
             {/* Our Product Grid */}
             <h1 className="text-center font-bold text-2xl sm:text-4xl text-black ml-5 py-16">Our Products</h1>

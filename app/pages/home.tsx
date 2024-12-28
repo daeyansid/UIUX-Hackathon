@@ -4,6 +4,7 @@ import LogoBar from '../components/LogoBar';
 import ProductCard from '../components/card';
 import CategorySection from '../components/category-section';
 import CategorySectionClient from '../components/category-section-client';
+import FurnitureShowcase from '../components/furniture-showcase';
 
 export interface Category {
     title: string
@@ -109,9 +110,12 @@ const HomePage: React.FC = () => {
                 categories={categories}
             />
 
+            {/* Furniture Showcase */}  
+            <FurnitureShowcase />
+
             {/* Our Product Grid */}
             <h1 className="text-center font-bold text-2xl sm:text-4xl text-black ml-5 py-16">Our Products</h1>
-            <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="p-4 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <ProductCard
                     title="Library Stool Chair"
                     price={20}
